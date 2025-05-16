@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dark Mode Gallery</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-black dark:bg-gray-900 dark:text-white transition duration-300 overflow-hidden">
+
+    <!-- Toggle Button -->
+    <div class="p-4 flex justify-end">
+        <button id="theme-toggle" class="text-2xl" onclick="toggleButton()"> 🌙 </button>
+    </div>
+
+    <h1 class="text-4xl font-bold text-center">IMAGE GALLERY</h1>
+
+    <div class="lg:w-1/2 mx-auto w-full px-2 mt-6">
+        <img src="Assets/pic (5).jpg" alt="Main Image" class="rounded-xl shadow-xl" id="mainpic">
+    </div>
+
+    <div class="flex lg:flex-row flex-col mt-4 gap-2 lg:ml-2 ml-5">
+        <img src="Assets/pic (1).jpg" class="rounded-md cursor-pointer lg:w-[210px] w-[280px]" onclick="changePic(this)">
+        <img src="Assets/pic (2).jpg" class="rounded-md cursor-pointer lg:w-[210px] w-[280px]" onclick="changePic(this)">
+        <img src="Assets/pic (3).jpg" class="rounded-md cursor-pointer lg:w-[210px] w-[280px]" onclick="changePic(this)">
+        <img src="Assets/pic (4).jpg" class="rounded-md cursor-pointer lg:w-[210px] w-[280px]" onclick="changePic(this)">
+        <img src="Assets/pic (6).jpg" class="rounded-md cursor-pointer lg:w-[210px] w-[280px]" onclick="changePic(this)">
+        <img src="Assets/pic (7).jpg" class="rounded-md cursor-pointer lg:w-[210px] w-[280px]" onclick="changePic(this)">
+        <img src="Assets/pic (8).jpg" class="rounded-md cursor-pointer lg:w-[210px] w-[280px]" onclick="changePic(this)">
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
